@@ -26,6 +26,7 @@ function countDown() {
 function countReset() {
   counter =0;
   count.innerHTML = counter;
+  document.querySelector("p").innerHTML = "Please enter what you want to count";
 };
 
 //数えるものをセット

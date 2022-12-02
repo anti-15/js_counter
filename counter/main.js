@@ -15,12 +15,15 @@ function countUp() {
 
 //カウントダウン関数
 function countDown() {
-  counter--;
-  count.innerHTML = counter;
+  if (counter !== 0) {
+    counter--;
+    count.innerHTML = counter;  
+  }
+  
 };
 
 //リセット関数
-function countDown() {
+function countReset() {
   counter =0;
   count.innerHTML = counter;
 };
@@ -34,5 +37,5 @@ function set() {
 
 up.addEventListener('click', countUp);
 down.addEventListener('click', countDown);
-reset.addEventListener("click", countDown);
+reset.addEventListener("click", countReset);
 load.addEventListener("click", set);
